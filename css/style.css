@@ -1353,6 +1353,7 @@ a.copy {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.75);
   overflow-y: auto;
+  z-index: 1000;
 }
 
 .popup-form {
