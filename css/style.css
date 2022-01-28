@@ -618,6 +618,7 @@ a.categories-index {
     justify-content: center;
     align-items: center;
     min-width: 1200px;
+    margin-top: 60px;
 }
 
 .shop-wrapper {
@@ -1371,6 +1372,26 @@ a.categories-index {
 
 a.copy {
     text-decoration: none;
+}
+
+
+/* popup */
+
+.popup {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba (0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.popup-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
