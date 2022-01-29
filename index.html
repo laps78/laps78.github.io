@@ -19,6 +19,7 @@
             Ваш фидбэк
           </h3>
           <label class="popup-form-label">
+            <span class="popup-form-label">Как часто вы заходите на сайт?</span>
             <select class="popup-form-select" name="popup-form-select" autofocus>
               <option value="value1" selected>Почти каждый день</option>
               <option value="value2">Раз в несколько днeй</option>
@@ -27,12 +28,16 @@
           </select>
           </label>
           <label class="popup-form-label">
-           <input type="radio" class="popup-input-radio">
-            <label class="popup-form-label" for="" class="popup-radio-label">Да</label>
-            <input type="radio" class="popup-input-radio">
-            <label class="popup-form-label" for="" class="popup-radio-label">Нет</label>
+            <span class="popup-form-label">Вы подписаны на e-mail рассылку?</span>
+            <div class="popup-radio-wrapper">
+              <input type="radio" name="popup-input-radio" class="popup-input-radio" checked>
+              <p class="popup-form-label" for="popup-input-radio" class="popup-radio-label">Да</p>
+              <input type="radio" name="popup-input-radio" class="popup-input-radio">
+              <p class="popup-form-label" for="popup-input-radio" class="popup-radio-label">Нет</p>
+            </div>
           </label>
           <label class="popup-form-label">
+            <span class="popup-text-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
             <input
               type="text"
               class="popup-input-text"

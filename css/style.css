@@ -1351,7 +1351,7 @@ a.copy {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.6);
   overflow-y: auto;
   z-index: 1000;
 }
@@ -1363,11 +1363,44 @@ a.copy {
   align-items: center;
   position: relative;
   width: 25vw;
-  height: 50vh;
+  height: 100%;
   border: 1px solid red;
   background-color: rgb(255, 255, 255);
-  padding: 20px;
+  padding: 30px;
 }
+
+.popup-form-label {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  font-family: open-sans;
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: left;  
+}
+.popup-form-select {
+  display: flex;
+  width: 270px;
+  height: 48px;
+  background-color: #f4f7f6;
+  display: flex;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: 400;
+  font-family: open-sans;
+  padding-left: 20px;
+}
+
+.popup-radio-wrapper {
+  w1idth: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.popup-input-radio {
+  align-self: flex-start;
+}
+
 .popup-form-label, 
 .popup-form-select, 
 .popup-input-text, 
@@ -1377,6 +1410,26 @@ a.copy {
 .popup-form-title {
   margin-top: 20px;
 }
+
+.popup-button-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: open-sans;
+  width: 270px;
+  height: 48px;
+  background-color: #b59f5b;
+}
+
+.popup-button-submit:hover {
+  background-color: rgb(50, 50, 50);
+}
+
 /* hide elements */
 
 .visually-hidden {
