@@ -1356,16 +1356,27 @@ a.copy {
   z-index: 1000;
 }
 
-.popup-form {
+.popup-form-wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   position: relative;
   width: 25vw;
   height: 50vh;
   border: 1px solid red;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
 }
-
+.popup-form-label, 
+.popup-form-select, 
+.popup-input-text, 
+.pupup-button-submit {
+  min-width: 100%;
+}
+.popup-form-title {
+  margin-top: 20px;
+}
 /* hide elements */
 
 .visually-hidden {

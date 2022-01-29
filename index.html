@@ -11,9 +11,40 @@
 <body>
     <!-- POPUP -->
     <div class="popup visually-h!!!!!!!!!!!!!">
-        <div class="popup-form">
-            popup
-        </div>
+      <div class="popup-form-wrapper"
+        <form action="#"
+              method="_POST" 
+              class="popup-form">
+          <h3 class="section-title popup-form-title">
+            Ваш фидбэк
+          </h3>
+          <label class="popup-form-label">
+            <select class="popup-form-select" name="popup-form-select" autofocus>
+              <option value="value1" selected>Почти каждый день</option>
+              <option value="value2">Раз в несколько днeй</option>
+              <option value="value3">Раз в несколько недель</option>
+              <option value="value4">Несколько раз в год</option>
+          </select>
+          </label>
+          <label class="popup-form-label">
+           <input type="radio" class="popup-input-radio">
+            <label class="popup-form-label" for="" class="popup-radio-label">Да</label>
+            <input type="radio" class="popup-input-radio">
+            <label class="popup-form-label" for="" class="popup-radio-label">Нет</label>
+          </label>
+          <label class="popup-form-label">
+            <input
+              type="text"
+              class="popup-input-text"
+              placeholder="Может, больше рецептов?"
+              required
+            />
+          </label>
+          <button class="popup-button-submit" type="submit">
+            отправить
+          </button>
+        </form>
+      </div>
     </div>
 
     <header class="header">
@@ -122,7 +153,7 @@
         </div>
     </section>
     <div class="page-container">
-        <main class="post-list">
+      <main class="post-list">
             <!-- POST CARD 1 -->
             <article class="post">
                 <div class="post-image-wrapper">
