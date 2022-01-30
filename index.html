@@ -11,14 +11,11 @@
 <body>
     <!-- POPUP -->
     <div class="popup visually-h!!!!!!!!!!!!!">
-      <div class="popup-form-wrapper"
-        <form action="#"
-              method="_POST" 
-              class="popup-form">
-          <h3 class="section-title popup-form-title">
-            Ваш фидбэк
-          </h3>
-          <label class="popup-form-label">
+        <div class="popup-form-wrapper" < action="#" method="_POST" class="popup-form">
+            <h3 class="section-title popup-form-title">
+                Ваш фидбэк
+            </h3>
+            <label class="popup-form-label">
             <span class="popup-form-label">Как часто вы заходите на сайт?</span>
             <select class="popup-form-select" name="popup-form-select" autofocus>
               <option value="value1" selected>Почти каждый день</option>
@@ -27,16 +24,24 @@
               <option value="value4">Несколько раз в год</option>
           </select>
           </label>
-          <label class="popup-form-label">
+            <!-- something goes wrong down here -->
+
+            <label class="popup-form-label">
+
             <span class="popup-form-label">Вы подписаны на e-mail рассылку?</span>
+
             <div class="popup-radio-wrapper">
-              <input type="radio" name="popup-input-radio" class="popup-input-radio" checked>
+
+              <input type="radio" name="popup-input-radio" class="popup-input-radio" value="yes" checked>
               <p class="popup-form-label" for="popup-input-radio" class="popup-radio-label">Да</p>
-              <input type="radio" name="popup-input-radio" class="popup-input-radio">
+              <input type="radio" name="popup-input-radio" class="popup-input-radio" value="No">
               <p class="popup-form-label" for="popup-input-radio" class="popup-radio-label">Нет</p>
             </div>
           </label>
-          <label class="popup-form-label">
+            <!--/end of problem zone-->
+            <!--another part todo. Check .psd for more details-->
+
+            <label class="popup-form-label">
             <span class="popup-text-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
             <input
               type="text"
@@ -45,11 +50,12 @@
               required
             />
           </label>
-          <button class="popup-button-submit" type="submit">
+
+            <button class="popup-button-submit" type="submit">
             отправить
           </button>
-        </form>
-      </div>
+            </form>
+        </div>
     </div>
 
     <header class="header">
@@ -158,7 +164,7 @@
         </div>
     </section>
     <div class="page-container">
-      <main class="post-list">
+        <main class="post-list">
             <!-- POST CARD 1 -->
             <article class="post">
                 <div class="post-image-wrapper">
