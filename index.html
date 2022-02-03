@@ -11,50 +11,43 @@
 <body>
     <!-- POPUP -->
     <div class="popup visually-h!!!!!!!!!!!!!">
-        <div class="popup-form-wrapper" < action="#" method="_POST" class="popup-form">
-            <h3 class="section-title popup-form-title">
-                Ваш фидбэк
-            </h3>
+        <div class="popup-form-wrapper">
+          <h3 class="section-title popup-form-title">
+            Ваш фидбэк
+          </h3>
+          <form action="#" method="_POST" class="popup-form">
             <label class="popup-form-label">
-            <span class="popup-form-label">Как часто вы заходите на сайт?</span>
+              <span class="popup-form-label">Как часто вы заходите на сайт?</span>
             <select class="popup-form-select" name="popup-form-select" autofocus>
               <option value="value1" selected>Почти каждый день</option>
               <option value="value2">Раз в несколько днeй</option>
               <option value="value3">Раз в несколько недель</option>
               <option value="value4">Несколько раз в год</option>
-          </select>
-          </label>
-    <!-- something goes wrong down here -->
-
+            </select>
+            </label>
             <label class="popup-form-label">
-
-            <span class="popup-form-label">Вы подписаны на e-mail рассылку?</span>
-
-            <div class="popup-radio-wrapper">
-
-              <input type="radio" name="popup-input-radio" class="popup-input-radio" value="yes" checked>
-              <label class="popup-radio-label" for="popup-input-radio" class="popup-radio-label">Да</label>
-              <input type="radio" name="popup-input-radio" class="popup-input-radio" value="No">
-              <label class="popup-radio-label" for="popup-input-radio" class="popup-radio-label">Нет</label>
-            </div>
-          </label>
-      <!--/end of problem zone-->
-      <!--another part todo. Check .psd for more details-->
-
+              <span class="popup-form-label">Вы подписаны на e-mail рассылку?</span>
+              <div class="popup-radio-wrapper">
+                <label class="popup-radio-label" for="popup-input-radio" class="popup-radio-label">
+                  <input type="radio" name="popup-input-radio" class="popup-input-radio visually-hidden" value="yes" checked>Да
+                </label>
+                <label class="popup-radio-label" for="popup-input-radio" class="popup-radio-label visually-hidden">
+                  <input type="radio" name="popup-input-radio" class="popup-input-radio" value="No">Нет
+                </label>
+              </div>
+            </label>
             <label class="popup-form-label">
             <span class="popup-text-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-            <input
-              type="text"
-              class="popup-input-text"
+            <textarea
+              class="popup-input-textarea"
               placeholder="Может, больше рецептов?"
               required
-            />
-          </label>
-
+            ></textarea>
+            </label>
             <button class="popup-button-submit" type="submit">
-            отправить
-          </button>
-            </form>
+              отправить
+            </button>
+          </form>
         </div>
     </div>
 
