@@ -9,14 +9,14 @@
 </head>
 
 <body>
-    <!-- POPUP -->
-    <div class="popup visually-h!!!!!!!!!!!!!">
-        <div class="popup-form-wrapper">
-          <h3 class="section-title popup-form-title">
+  <!-- POPUP -->
+  <div class="popup visually-hidden">
+      <div class="popup-form-wrapper">
+        <h3 class="section-title popup-form-title">
             Ваш фидбэк
-          </h3>
-          <form action="#" method="_POST" class="popup-form">
-            <label class="popup-form-label">
+        </h3>
+        <form action="#" method="_POST" class="popup-form">
+          <label class="popup-form-label">
               <span class="popup-form-label">Как часто вы заходите на сайт?</span>
             <select class="popup-form-select" name="popup-form-select" autofocus>
               <option value="value1" selected>Почти каждый день</option>
@@ -24,8 +24,8 @@
               <option value="value3">Раз в несколько недель</option>
               <option value="value4">Несколько раз в год</option>
             </select>
-            </label>
-            <label class="popup-form-label">
+          </label>
+          <label class="popup-form-label">
               <span class="popup-form-label">Вы подписаны на e-mail рассылку?</span>
               <div class="popup-radio-wrapper">
                 <label class="popup-radio-label" for="popup-input-radio" class="popup-radio-label">
@@ -35,253 +35,260 @@
                   <input type="radio" name="popup-input-radio" class="popup-input-radio" value="No">Нет
                 </label>
               </div>
-            </label>
-            <label class="popup-form-label">
+          </label>
+          <label class="popup-form-label">
             <span class="popup-text-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
             <textarea
               class="popup-input-textarea"
               placeholder="Может, больше рецептов?"
               required
             ></textarea>
-            </label>
-            <button class="popup-button-submit" type="submit">
-              отправить
-            </button>
-          </form>
-        </div>
-    </div>
+          </label>
+          <button class="popup-button-submit" type="submit">
+            отправить
+          </button>
+        </form>
+      </div>
+  </div>
 
-    <header class="header">
-        <div class="menu-container">
-            <a href="#0">
-                <img src="svg/noemi-logo.svg" class="header-logo" alt="noemi-logo" />
-            </a>
-            <nav class="menu">
-                <ul class="menu-list">
-                    <li class="menu-list-item">
-                        <a class="menu-link" href="#0">Главная</a>
-                    </li>
-                    <li class="menu-list-item">
-                        <a class="menu-link" href="#0">Статьи</a>
-                    </li>
-                    <li class="menu-list-item">
-                        <a class="menu-link" href="#0">Теги</a>
-                    </li>
-                    <li class="menu-list-item">
-                        <a class="menu-link" href="#3">Темы</a>
-                    </li>
-                    <li class="menu-list-item">
-                        <a class="menu-link" href="#4">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
+  <header class="header">
+      <div class="menu-container">
+        <a href="#0">
+          <img src="svg/noemi-logo.svg" class="header-logo" alt="noemi-logo" />
+        </a>
+        <nav class="menu">
+          <ul class="menu-list">
+            <li class="menu-list-item">
+              <a class="menu-link" href="#0">Главная</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-link" href="#0">Статьи</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-link" href="#0">Теги</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-link" href="#3">Темы</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-link" href="#4">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="intro">
+        <h1 class="h1-title">Блог о творчестве, спорте, и образе жизни</h1>
+      </div>
+  </header>
+  <!-- TRENDS -->
+  <section class="trends">
+    <h2 class="section-title">сейчас в тренде</h2>
+    <div class="trends-wrapper">
+      <!-- trend 1 -->
+      <article class="trend">
+        <div class="trend-header">
+          <!-- tagine -->
+          <ul class="tag-line">
+            <li class="tag-line">
+              <a class="tag-link" href="#0">lifestyle</a>
+            </li>
+            <li class="tag-line">
+              <a class="tag-link" href="#0">interior</a>
+            </li>
+          </ul>
+          <!-- /tagline -->
+          <h3 class="trend-header-title">
+            Сейчас в тренде: сад на подоконнике
+          </h3>
         </div>
-        <div class="intro">
-            <h1 class="h1-title">Блог о творчестве, спорте, и образе жизни</h1>
+      </article>
+      <!-- /trend 1-->
+      <!-- trend 2 -->
+      <article class="trend">
+        <div class="trend-header">
+          <!-- tagine -->
+          <ul class="tag-line">
+            <li class="tag-line">
+              <a class="tag-link" href="#0">food</a>
+            </li>
+          </ul>
+          <!-- /tagline -->
+          <h3 class="trend-header-title">
+            Сейчас в тренде: сад на подоконнике
+          </h3>
         </div>
-    </header>
-    <section class="trends">
-        <h2 class="section-title">сейчас в тренде</h2>
-        <div class="trends-wrapper">
-            <!-- TREND 1 -->
-            <article class="trend">
-                <div class="trend-header">
-                    <!-- tagine -->
-                    <ul class="tag-line">
-                        <li class="tag-line">
-                            <a class="tag-link" href="#0">lifestyle</a>
-                        </li>
-                        <li class="tag-line">
-                            <a class="tag-link" href="#0">interior</a>
-                        </li>
-                    </ul>
-                    <!-- /tagline -->
-                    <h3 class="trend-header-title">
-                        Сейчас в тренде: сад на подоконнике
-                    </h3>
-                </div>
-            </article>
-            <!-- /trend 1-->
-            <!-- trend 2 -->
-            <article class="trend">
-                <div class="trend-header">
-                    <!-- tagine -->
-                    <ul class="tag-line">
-                        <li class="tag-line">
-                            <a class="tag-link" href="#0">food</a>
-                        </li>
-                    </ul>
-                    <!-- /tagline -->
-                    <h3 class="trend-header-title">
-                        Сейчас в тренде: сад на подоконнике
-                    </h3>
-                </div>
-            </article>
-            <!-- /trend 2-->
-            <!-- trend 3 -->
-            <article class="trend">
-                <div class="trend-header">
-                    <!-- tagine -->
-                    <ul class="tag-line">
-                        <li class="tag-line">
-                            <a class="tag-link" href="#0">lifestyle</a>
-                        </li>
-                        <li class="tag-line">
-                            <a class="tag-link" href="#0">travel</a>
-                        </li>
-                    </ul>
-                    <!-- /tagline -->
-                    <h3 class="trend-header-title">Собираемся в первый поход в горы</h3>
-                </div>
-            </article>
-            <!-- /trend 3-->
-            <!-- trend 4 -->
-            <article class="trend">
-                <div class="trend-header">
-                    <!-- tagine -->
-                    <ul class="tag-line">
-                        <li class="tag-line">
-                            <a class="tag-link" href="#0">food</a>
-                        </li>
-                        <li class="tag-line">
-                            <a class="tag-link" href="#0">health</a>
-                        </li>
-                    </ul>
-                    <!-- /tagline -->
-                    <h3 class="trend-header-title">
-                        Сейчас в тренде: сколько витамина с в лимонах?
-                    </h3>
-                </div>
-            </article>
-            <!-- /trend 4-->
+      </article>
+      <!-- /trend 2-->
+      <!-- trend 3 -->
+      <article class="trend">
+        <div class="trend-header">
+          <!-- tagine -->
+          <ul class="tag-line">
+            <li class="tag-line">
+              <a class="tag-link" href="#0">lifestyle</a>
+            </li>
+            <li class="tag-line">
+              <a class="tag-link" href="#0">travel</a>
+            </li>
+          </ul>
+          <!-- /tagline -->
+          <h3 class="trend-header-title">Собираемся в первый поход в горы</h3>
         </div>
-    </section>
-    <div class="page-container">
-        <main class="post-list">
-            <!-- POST CARD 1 -->
-            <article class="post">
-                <div class="post-image-wrapper">
-                    <!-- post img -->
-                    <img src="images/last-post1.jpg" class="post-image" alt="прогулка по утреннему пляжу" />
-                </div>
-                <div class="post-card-content-wrapper">
-                    <div class="post-header">
-                        <!-- tagine -->
-                        <ul class="tag-line">
-                            <li class="tag-line">
-                                <a class="tag-link" href="#0">Travel</a>
-                            </li>
-                            <li class="tag-line">
-                                <a class="tag-link" href="#0">Health</a>
-                            </li>
-                        </ul>
-                        <!-- caption -->
-                        <h3 class="post-title">
-                            <a class="post-title" href="#0">10 мест, ради которых стоит проснуться на рассвете</a
-                >
-              </h3>
-              <div class="time-adress-wrapper">
-                <!-- date -->
-                <time datetime="2019-06-10" class="post-date"
-                  >10 июня 2019</time
-                >
-                <!-- author-->
-                <div class="author">Неизвестный автор</div>
-              </div>
+      </article>
+      <!-- /trend 3-->
+      <!-- trend 4 -->
+      <article class="trend">
+        <div class="trend-header">
+          <!-- tagine -->
+          <ul class="tag-line">
+            <li class="tag-line">
+              <a class="tag-link" href="#0">food</a>
+            </li>
+            <li class="tag-line">
+              <a class="tag-link" href="#0">health</a>
+            </li>
+          </ul>
+          <!-- /tagline -->
+          <h3 class="trend-header-title">
+            Сейчас в тренде: сколько витамина с в лимонах?
+          </h3>
+        </div>
+      </article>
+      <!-- /trend 4-->
+    </div>
+  </section>
+  <!-- PAGE CONTAINER -->
+  <div class="page-container">
+    <!-- MAIN -->
+    <main class="post-list">
+      <!-- POST CARD 1 -->
+      <article class="post">
+        <div class="post-image-wrapper">
+          <!-- post img -->
+          <img src="images/last-post1.jpg" class="post-image" alt="прогулка по утреннему пляжу" />
+        </div>
+        <div class="post-card-content-wrapper">
+          <div class="post-header">
+            <!-- tagine -->
+            <ul class="tag-line">
+              <li class="tag-line">
+                <a class="tag-link" href="#0">Travel</a>
+              </li>
+              <li class="tag-line">
+                <a class="tag-link" href="#0">Health</a>
+              </li>
+            </ul>
+            <!-- caption -->
+            <h3 class="post-title">
+              <a class="post-title" href="#0">
+                10 мест, ради которых стоит проснуться на рассвете
+              </a>
+            </h3>
+            <div class="time-adress-wrapper">
+              <!-- date -->
+              <time datetime="2019-06-10" class="post-date">10 июня 2019</time>
+              <!-- author-->
+              <div class="author">Неизвестный автор</div>
             </div>
+          </div>
             <p class="post-text">
               Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел,
               запущены фонтаны города... Музеи еще закрыты. Что посмотреть?
             </p>
-          </div>
-        </article>
-        <!-- /POST CARD 1 -->
-        <!-- POST CARD 2 -->
-        <article class="post">
-          <div class="post-image-wrapper">
-            <!-- post img -->
-            <img
-              src="images/last-post2.jpg"
-              class="post-image"
-              alt="занятия йогой на морском побережье"
-            />
-          </div>
-          <div class="post-card-content-wrapper">
-            <div class="post-header">
-              <!-- tagine -->
-              <ul class="tag-line">
-                <li class="tag-line">
-                  <a class="tag-link" href="#0">Health</a>
-                            </li>
-                            <li class="tag-line">
-                                <a class="tag-link" href="#0">Lifestyle</a>
-                            </li>
-                            </ul>
-                            <!-- caption -->
-                            <h3 class="post-title">
-                                <a class="post-title" href="#0">Йога для начинающих в домашних условиях</a
-                >
-              </h3>
-              <div class="time-adress-wrapper">
-                <!-- date -->
-                <time datetime="2019-06-10" class="post-date"
-                  >10 июня 2019</time
-                >
-                <!-- author-->
-                <div class="author">Неизвестный автор</div>
+        </div>
+      </article>
+      <!-- /POST CARD 1 -->
+      <!-- POST CARD 2 -->
+      <article class="post">
+        <div class="post-image-wrapper">
+          <!-- post img -->
+          <img
+            src="images/last-post2.jpg"
+            class="post-image"
+            alt="занятия йогой на морском побережье"
+          />
+        </div>
+        <div class="post-card-content-wrapper">
+          <div class="post-header">
+            <!-- tagine -->
+            <ul class="tag-line">
+              <li class="tag-line">
+                <a class="tag-link" href="#0">Health</a>
+              </li>
+              <li class="tag-line">
+                <a class="tag-link" href="#0">Lifestyle</a>
+              </li>
+            </ul>
+            <!-- caption -->
+            <h3 class="post-title">
+              <a class="post-title" href="#0">
+                Йога для начинающих в домашних условиях
+              </a>
+            </h3>
+            <div class="time-adress-wrapper">
+              <!-- date -->
+              <time datetime="2019-06-10" class="post-date">
+                10 июня 2019
+              </time>
+              <!-- author-->
+              <div class="author">
+                Неизвестный автор
               </div>
             </div>
-            <p class="post-text">
-              Расскажем, какие упражнения выбрать и как сделать коврик для
-              занятия йогой из того, что можно найти в шкафу.
-            </p>
           </div>
-        </article>
-        <!-- /POST CARD 2 -->
-        <!-- POST CARD 3 -->
-        <article class="post">
-          <div class="post-image-wrapper">
-            <!-- post img -->
-            <img
-              src="images/last-post3.jpg"
-              class="post-image"
-              alt="тусовка на фестивале"
-            />
-          </div>
-          <div class="post-card-content-wrapper">
-            <div class="post-header">
-              <!-- tagine -->
-              <ul class="tag-line">
-                <li class="tag-line">
-                  <a class="tag-link" href="#0">Music</a>
-                                </li>
-                                </ul>
-                                <!-- caption -->
-                                <h3 class="post-title">
-                                    <a class="post-title" href="#0">Лучшие музыкальные фестивали этого лета</a
-                >
-              </h3>
-              <div class="time-adress-wrapper">
-                <!-- date -->
-                <time datetime="2019-06-10" class="post-date"
-                  >10 июня 2019</time
-                >
-                <!-- author-->
-                <div class="author">Неизвестный автор</div>
+          <p class="post-text">
+            Расскажем, какие упражнения выбрать и как сделать коврик для
+            занятия йогой из того, что можно найти в шкафу.
+          </p>
+        </div>
+      </article>
+      <!-- /POST CARD 2 -->
+      <!-- POST CARD 3 -->
+      <article class="post">
+        <div class="post-image-wrapper">
+          <!-- post img -->
+          <img
+            src="images/last-post3.jpg"
+            class="post-image"
+            alt="тусовка на фестивале"
+          />
+        </div>
+        <div class="post-card-content-wrapper">
+          <div class="post-header">
+            <!-- tagine -->
+            <ul class="tag-line">
+              <li class="tag-line">
+                <a class="tag-link" href="#0">Music</a>
+              </li>
+            </ul>
+            <!-- caption -->
+            <h3 class="post-title">
+              <a class="post-title" href="#0">
+                Лучшие музыкальные фестивали этого лета
+              </a>
+            </h3>
+            <div class="time-adress-wrapper">
+              <!-- date -->
+              <time datetime="2019-06-10" class="post-date">
+                10 июня 2019
+              </time>
+              <!-- author-->
+              <div class="author">
+                Неизвестный автор
               </div>
             </div>
-            <p class="post-text">
-              Лето на носу, а с ним и музыкальные фестивали. На каком же из них
-              вы разобьете свою палатку?
-            </p>
-            <p class="post-text">
-              Мы составили список лучших летних фестивалей по всему миру.
-            </p>
           </div>
-        </article>
-        <!-- /POST CARD 3 -->
-        <!-- POST CARD 4 -->
-        <article class="post">
+          <p class="post-text">
+            Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьете свою палатку?
+          </p>
+          <p class="post-text">
+            Мы составили список лучших летних фестивалей по всему миру.
+          </p>
+        </div>
+      </article>
+      <!-- /POST CARD 3 -->
+      <!-- POST CARD 4 -->
+      <article class="post">
           <div class="post-image-wrapper">
             <!-- post img -->
             <img
@@ -296,15 +303,16 @@
               <ul class="tag-line">
                 <li class="tag-line">
                   <a class="tag-link" href="#0">Lifestyle</a>
-                                    </li>
-                                    <li class="tag-line">
-                                        <a class="tag-link" href="#0">Food</a>
-                                    </li>
-                                    </ul>
-                                    <!-- caption -->
-                                    <h3 class="post-title">
-                                        <a class="post-title" href="#0">Наукоемкий подход к кулинарии</a
-                >
+                </li>
+                <li class="tag-line">
+                  <a class="tag-link" href="#0">Food</a>
+                </li>
+              </ul>
+              <!-- caption -->
+              <h3 class="post-title">
+                <a class="post-title" href="#0">
+                  Наукоемкий подход к кулинарии
+                </a>
               </h3>
               <div class="time-adress-wrapper">
                 <!-- date -->
