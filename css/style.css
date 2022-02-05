@@ -139,8 +139,8 @@ html {
 .trends {
   display: flex;
   flex-direction: column;
-  min-width: 1200px;
-  margin-top: 63px;
+  max-width: 1200px;
+  margin: 60px auto 0px;
 }
 
 .trends-wrapper {
@@ -172,18 +172,22 @@ html {
 
 .trend:nth-child(1) {
   background: url("../images/trend1.jpg");
+  background-size: cover;
 }
 
 .trend:nth-child(2) {
   background: url("../images/trend2.jpg");
+  background-size: cover;
 }
 
 .trend:nth-child(3) {
   background: url("../images/trend3.jpg");
+  background-size: cover;
 }
 
 .trend:nth-child(4) {
   background: url("../images/trend4.jpg");
+  background-size: cover;
 }
 
 .trend:nth-child(n+2) {
@@ -208,6 +212,8 @@ html {
 .trend-header-title:hover {
   color: #b59f5b;
 }
+
+/* PAGE CONTAINER */
 
 .page-container {
   display: flex;
@@ -1560,4 +1566,33 @@ a.copy {
   height: 1px;
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute;
+}
+
+@media (min-width: 750px) and (max-width: 1199px) {
+  .trends-wrapper {
+    flex-wrap: wrap;
+  }
+  .trend {
+    width: calc(50% - 3px);
+  }
+  .trend:nth-child(n+3) {
+    margin-top: 3px;
+  }
+}
+
+@media (max-width: 749px) {
+  .trends-wrapper {
+    flex-wrap: wrap;
+  }
+  .trend {
+    width: 100%;
+    height: 230px;
+  }
+  .trend:nth-child(n+2) {
+    margin-left: 0;
+  }
+
+  .trend:nth-child(n+1) {
+    margin-top: 3px;
+  }
 }
