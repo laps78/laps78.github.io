@@ -222,7 +222,7 @@ html {
 .post-list {
   display: flex;
   flex-direction: column;
-  width: 795px;
+  flex-grow: 1;
 }
 
 /* post */
