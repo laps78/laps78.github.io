@@ -603,7 +603,7 @@ a.categories-index {
   justify-content: center;
   align-items: center;
   max-width: 1200px;
-  margin: 60px auto 15px;
+  margin: 25px auto 15px;
 }
 
 .shop-wrapper {
@@ -612,6 +612,13 @@ a.categories-index {
   max-width: 100%;
   align-content: space-between;
   margin: auto;
+}
+.shop-item {
+  display: flex;
+}
+
+.shop-item:nth-child(2) {
+  margin: 0 65px;
 }
 
 .shop-item-wrapper {
@@ -628,16 +635,16 @@ a.categories-index {
   height: 200px;
   width: 300px;
   position: relative;
-  margin: 30px auto -70px;
-  padding: 20px;
+  margin: 0px auto -50px;
+  padding: 0 20px 20px;
   z-index: 10;
 }
 
 .shop-item-border {
   border: 3px solid #b59f5b;
   padding: 20px;
-  margin: 20px;
   flex-grow: 1;
+  z-index: 10;
 }
 
 .shop-item-title {
@@ -1351,11 +1358,22 @@ a.copy {
   min-height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.6);
   overflow-y: auto;
   z-index: 1000;
+}
+
+.popup-wrapper {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
 }
 
 .popup-form-wrapper {
@@ -1370,6 +1388,20 @@ a.copy {
   background-color: rgb(255, 255, 255);
   padding: 30px;
 }
+
+.popup-btn-close {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: -26px;
+  content: "";
+  align-self: flex-end;
+  background-image: url("../svg/form-x.svg");
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
 .popup-form-title {
   margin-top: 30px;
 }
@@ -1428,7 +1460,6 @@ a.copy {
 }
 
 .popup-radio-label::before {
-  /*fix folowing props!*/
   content: "";
   align-self: flex-start;
   display: inline-block;
@@ -1441,7 +1472,11 @@ a.copy {
   background-position: center center;
   background-size: 15px;
 }
+
 .popup-input-radio:checked ~ .popup-radio-label::before {
+  /* TODO someway it doesn't work. What i do wrong? 
+  It seems to be a mistake using selector(combinator) */
+
   content: "";
   align-self: flex-start;
   display: inline-block;
@@ -1468,6 +1503,8 @@ a.copy {
 .popup-input-textarea,
 .pupup-button-submit {
   width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .popup-text-label {
@@ -1493,6 +1530,8 @@ a.copy {
 
 .popup-input-textarea:focus {
   border: 1px solid #b59f5b;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .popup-button-submit {
