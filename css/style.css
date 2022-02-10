@@ -387,13 +387,17 @@ section {
 /* new posts */
 
 section.news {
-    margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  width: 100%;
 }
 
 article.new-post {
   display: flex;
   flex-wrap: nowrap;
   margin-top: 20px;
+  width: 100%;
 }
 
 .new-post-image-wrapper {
@@ -445,18 +449,30 @@ a.new-post {
 
 .search {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .search-form {
   display: flex;
   flex-direction: row-reverse;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 270px;
 }
-
+.searchfield-label {
+  display: flex;
+  max-width: 270px;
+}
 .search-field {
   display: flex;
-  width: 270px;
+  flex-grow: 1;
+  max-width: 270px;
   height: 48px;
   margin-top: 24px;
+  margin-right: 48px;
   padding-left: 20px;
   font-size: 13px;
   font-weight: 400;
@@ -472,10 +488,10 @@ a.new-post {
 .search-button {
   position: absolute;
   margin-top: 24px;
+  margin-right: 40px;
   width: 48px;
   height: 48px;
   border: none;
-  background-color: #b59f5b;
   background-image: url("../svg/search.svg");
   background-color: #b59f5b;
   background-repeat: no-repeat;
@@ -488,11 +504,25 @@ a.new-post {
 .subscribe {
   display: flex;
   flex-direction: column;
+  max-width: 270px;
+}
+form.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 270px;
+  flex-grow: 1;
+}
+.subscribe-label {
+  max-width: 270px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-grow: 1;
 }
 
 input.subscribe {
-  display: flex;
-  width: 270px;
+  width: 100%;
+  max-width: 270px;
   height: 48px;
   padding-left: 20px;
   font-size: 13px;
@@ -506,7 +536,7 @@ button.subscribe {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
+  max-width: 270px;
   height: 48px;
   margin-top: 18px;
   text-transform: uppercase;
@@ -559,18 +589,27 @@ a.tags {
 
 /* categories */
 
-sectiion.categories {
+section.categories {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 100%;
 }
 
+ul.categories2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
 li.categories {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  max-width: 270px;
+  align-items: flex-start;
   border-bottom: 3px solid #eeeeee;
   list-style-type: none;
   flex-grow: 1;
@@ -643,7 +682,7 @@ a.categories-index {
   height: 200px;
   max-width: 300px;
   position: relative;
-  margin: 0px auto -50px;
+  margin: 0 auto -50px;
   z-index: 10;
 }
 
@@ -1166,18 +1205,40 @@ a.copy {
     background-color: #eeeeee;
   }
 
-  /* ASIDE */
-  .aside {
-    width: 100%;
-  }
-
   /* SIDEBAR */
 
   .sidebar {
-    width: 100%
-    max-width: 270px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+  section.news,
+  section.search,
+  .searchfield-label,
+  .subscribe-label,
+  input.subscribe,
+  .search-field {
+    width: 100%;
+    max-width: 100%;
+  }
+  .search-field,
+  .subscribe {
+    width: 100%;
+    max-width: 100%;
+  }
+  button.subscribe {
+    margin-top: 25px;
+    max-width: 100%;
+  } 
+  /* tags */
+  ul.tags {
+    justify-content: space-between;
   }
 
+  /* categories */
+  li.categories {
+    max-width: 100%;
+  }
 
   /* SHOP */
   .shop {
@@ -1207,6 +1268,7 @@ a.copy {
     width: 100%;
   }
 }
+
 @media (max-width: 749px) and (orientation: landscape) {
   /* TRENDS */
   .trends-wrapper {
