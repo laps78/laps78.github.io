@@ -12,7 +12,7 @@
   <!-- POPUP -->
   <div class="popup visually-hidden">
     <div class="popup-wrapper">
-      <div class="popup-btn-close"></div>
+      <button class="popup-btn-close"></button>
       <div class="popup-form-wrapper">
         <h3 class="section-title popup-form-title">
           Ваш фидбэк
@@ -30,14 +30,18 @@
           <label class="popup-form-label">
             <span class="popup-form-label">Вы подписаны на e-mail рассылку?</span>
               <div class="popup-radio-wrapper">
-                <label class="popup-radio-label" for="popup-input-radio">
-                  <input type="radio" name="popup-input-radio" class="popup-input-radio visually-hidden" value="yes" checked>
-                  Да
-                </label>
-                <label class="popup-radio-label" for="popup-input-radio">
-                  <input type="radio" name="popup-input-radio" class="popup-input-radio" value="No">
-                  Нет
-                </label>
+                <div class="popup-radio">
+                  <input type="radio" id="popup-radio-yes"  name="popup-radio" class="popup-input-radio" value="Да" checked>
+                  <label for="popup-radio-yes" class="popup-radio-label">
+                    Да
+                  </label>
+                </div>
+                <div class="popup-radio">
+                  <input type="radio" id="popup-radio-no" name="popup-radio" class="popup-input-radio" value="Нет">
+                  <label for="popup-radio-no" class="popup-radio-label">
+                    Нет
+                  </label>
+                </div>
               </div>
           </label>
             <label class="popup-form-label">
