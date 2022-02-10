@@ -200,10 +200,12 @@
               <div class="author">Неизвестный автор</div>
             </div>
           </div>
+          <div class="post-text-wrapper">
             <p class="post-text">
               Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел,
               запущены фонтаны города... Музеи еще закрыты. Что посмотреть?
             </p>
+          </div>  
         </div>
       </article>
       <!-- /POST CARD 1 -->
@@ -245,10 +247,12 @@
               </div>
             </div>
           </div>
-          <p class="post-text">
-            Расскажем, какие упражнения выбрать и как сделать коврик для
-            занятия йогой из того, что можно найти в шкафу.
-          </p>
+          <div class="post-text-wrapper">
+            <p class="post-text">
+              Расскажем, какие упражнения выбрать и как сделать коврик для
+              занятия йогой из того, что можно найти в шкафу.
+            </p>
+          </div>
         </div>
       </article>
       <!-- /POST CARD 2 -->
@@ -287,12 +291,14 @@
               </div>
             </div>
           </div>
-          <p class="post-text">
-            Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьете свою палатку?
-          </p>
-          <p class="post-text">
-            Мы составили список лучших летних фестивалей по всему миру.
-          </p>
+          <div class="post-text-wrapper">
+            <p class="post-text">
+              Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьете свою палатку?
+            </p>
+            <p class="post-text">
+              Мы составили список лучших летних фестивалей по всему миру.
+            </p>
+          </div>
         </div>
       </article>
       <!-- /POST CARD 3 -->
@@ -332,10 +338,12 @@
                 <div class="author">Неизвестный автор</div>
               </div>
             </div>
-            <p class="post-text">
-              Узнаем основы проектирования новых пищевых и около-пищевых опытов,
-              вскроем физику, химию и микробиологию еды.
-            </p>
+            <div class="post-text-wrapper">
+              <p class="post-text">
+                Узнаем основы проектирования новых пищевых и около-пищевых опытов,
+                вскроем физику, химию и микробиологию еды.
+              </p>
+            </div>  
           </div>
         </article>
         <!-- /POST CARD 4 -->
@@ -378,11 +386,13 @@
                 <div class="author">Неизвестный автор</div>
               </div>
             </div>
-            <p class="post-text">
-              Подушки для дивана целесообразней заказать в съемных чехлах на
-              молнии, если потребуется чистка подушек, проще снять чехлы, чем
-              везти подушку в химчистку.
-            </p>
+            <div class="post-text-wrapper">
+              <p class="post-text">
+                Подушки для дивана целесообразней заказать в съемных чехлах на
+                молнии, если потребуется чистка подушек, проще снять чехлы, чем
+                везти подушку в химчистку.
+              </p>
+            </div>  
           </div>
         </article>
         <!-- /POST CARD 5 -->
@@ -626,11 +636,11 @@
         <!--shop item  1-->
         <article class="shop-item">
           <div class="shop-item-wrapper">
-            <img
-              src="./images/shop-item-desk1.jpg"
-              alt="подушки на диван"
-              class="shop-item-image"
-            />
+            <picture class="shop-item-picture">
+              <source media="(max-width: 749px)" srcset="./images/shop-item-mobile1.jpg">
+              <source media="{min-width:750px) and (maxwidth: 1199px)"  srcset="./images/shop-item-tablet1.jpg">
+              <img class="shop-item-image" src="./images/shop-item-desk1.jpg" alt="подушки на диван">
+            </picture>
             <div class="shop-item-border">
               <h3 class="shop-item-title">подушки на диван</h3>
               <p class="shop-item-text">
@@ -651,11 +661,11 @@
         <!-- shop item 2-->
         <article class="shop-item">
           <div class="shop-item-wrapper">
-            <img
-              src="./images/shop-item-desk2.jpg"
-              alt="кукла &laquo;зайчик&raquo;"
-              class="shop-item-image"
-            />
+            <picture class="shop-item-picture">
+              <source media="(max-width: 749px)" srcset="./images/shop-item-mobile2.jpg">
+              <source media="{min-width:750px) and (maxwidth: 1199px)"  srcset="./images/shop-item-tablet2.jpg">
+              <img src="./images/shop-item-desk2.jpg" alt="кукла &laquo;зайчик&raquo;" class="shop-item-image">
+            </picture>
             <div class="shop-item-border">
               <h3 class="shop-item-title">кукла &laquo;зайчик&raquo;</h3>
               <p class="shop-item-text">
@@ -677,11 +687,11 @@
         <!-- shop item 3-->
         <article class="shop-item">
           <div class="shop-item-wrapper">
-            <img
-              src="./images/shop-item-desk3.jpg"
-              alt="шестиугольная рамка"
-              class="shop-item-image"
-            />
+            <picture class="shop-item-picture">
+              <source media="(max-width: 749px)" srcset="./images/shop-item-mobile1.jpg">
+              <source media="{min-width:750px) and (maxwidth: 1199px)"  srcset="./images/shop-item-tablet1.jpg">  
+              <img src="./images/shop-item-desk3.jpg" alt="шестиугольная рамка" class="shop-item-image">
+            </picture>
             <div class="shop-item-border">
               <h3 class="shop-item-title">шестиугольная рамка</h3>
               <p class="shop-item-text">
