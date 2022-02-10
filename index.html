@@ -27,7 +27,7 @@
               <option value="value4">Несколько раз в год</option>
             </select>
           </label>
-          <label class="popup-form-label">
+          <div class="popup-form-label">
             <span class="popup-form-label">Вы подписаны на e-mail рассылку?</span>
               <div class="popup-radio-wrapper">
                 <div class="popup-radio">
@@ -43,7 +43,7 @@
                   </label>
                 </div>
               </div>
-          </label>
+            </div>
             <label class="popup-form-label">
               <span class="popup-text-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
               <textarea
@@ -531,7 +531,7 @@
                 class="search-field"
                 placeholder="Найти..."
                 required
-              />
+              >
               <span class="visually-hidden">Поиск...</span>
             </label>
             <button type="button" class="search-button"></button>
@@ -637,9 +637,13 @@
         <article class="shop-item">
           <div class="shop-item-wrapper">
             <picture class="shop-item-picture">
-              <source media="(max-width: 749px)" srcset="./images/shop-item-mobile1.jpg">
-              <source media="{min-width:750px) and (maxwidth: 1199px)"  srcset="./images/shop-item-tablet1.jpg">
-              <img class="shop-item-image" src="./images/shop-item-desk1.jpg" alt="подушки на диван">
+              <source media="(max-width: 749px)"
+                srcset="images/shop-item-mobile1.jpg">
+              <source media="(min-width:750px) and (max-width: 1199px)" 
+                srcset="images/shop-item-tablet1.jpg">
+              <source media="(min-width: 1200px)"
+                srcset="images/shop-item-desk1.jpg">
+              <img src="images/shop-item-desk1.jpg" alt="подушки на диван">
             </picture>
             <div class="shop-item-border">
               <h3 class="shop-item-title">подушки на диван</h3>
@@ -662,9 +666,13 @@
         <article class="shop-item">
           <div class="shop-item-wrapper">
             <picture class="shop-item-picture">
-              <source media="(max-width: 749px)" srcset="./images/shop-item-mobile2.jpg">
-              <source media="{min-width:750px) and (maxwidth: 1199px)"  srcset="./images/shop-item-tablet2.jpg">
-              <img src="./images/shop-item-desk2.jpg" alt="кукла &laquo;зайчик&raquo;" class="shop-item-image">
+              <source media="(max-width: 749px)"
+                srcset="images/shop-item-mobile2.jpg">
+              <source media="(min-width:750px) and (maxwidth: 1199px)"
+                srcset="images/shop-item-tablet2.jpg">
+              <source media="(min-width: 1200px)"
+                srcset="images/shop-item-desk2.jpg">
+              <img src="images/shop-item-desk2.jpg" alt="кукла &laquo;зайчик&raquo;">
             </picture>
             <div class="shop-item-border">
               <h3 class="shop-item-title">кукла &laquo;зайчик&raquo;</h3>
@@ -688,14 +696,18 @@
         <article class="shop-item">
           <div class="shop-item-wrapper">
             <picture class="shop-item-picture">
-              <source media="(max-width: 749px)" srcset="./images/shop-item-mobile1.jpg">
-              <source media="{min-width:750px) and (maxwidth: 1199px)"  srcset="./images/shop-item-tablet1.jpg">  
-              <img src="./images/shop-item-desk3.jpg" alt="шестиугольная рамка" class="shop-item-image">
+              <source media="(max-width: 749px)"
+                srcset="images/shop-item-mobile1.jpg">
+              <source media="(min-width: 750px) and (maxwidth: 1199px)" 
+                srcset="images/shop-item-tablet1.jpg">  
+              <source media="(min-width: 1200px)"
+                srcset="images/shop-item-desk3.jpg">
+              <img src="images/shop-item-desk3.jpg" alt="шестиугольная рамка">
             </picture>
             <div class="shop-item-border">
               <h3 class="shop-item-title">шестиугольная рамка</h3>
               <p class="shop-item-text">
-                Необычная рамка ддля украшения дома из видео
+                Необычная рамка для украшения дома из видео
                 <a href="#" class="shop-item-link">
                   &laquo;Как сделать рамку из подручных средств за 30минут&raquo;
                 </a>

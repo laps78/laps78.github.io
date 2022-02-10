@@ -32,7 +32,7 @@ html {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  width: 1200px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -43,7 +43,7 @@ html {
   position: relative;
   z-index: 0;
   display: block;
-  min-width: 1200px;
+  max-width: 1200px;
   padding: 35px;
   min-height: 450px;
   background-image: url("../images/banner-bg.jpg");
@@ -488,7 +488,7 @@ a.new-post {
 .search-button {
   position: absolute;
   margin-top: 24px;
-  margin-right: 40px;
+  margin-right: 40px1;
   width: 48px;
   height: 48px;
   border: none;
@@ -592,14 +592,15 @@ a.tags {
 section.categories {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-grow: 1;
   width: 100%;
   max-width: 100%;
+  margin-bottom: 60px;
 }
 
-ul.categories2 {
+ul.categories {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -613,6 +614,7 @@ li.categories {
   border-bottom: 3px solid #eeeeee;
   list-style-type: none;
   flex-grow: 1;
+  width: 100%;
 }
 
 a.categories {
@@ -1105,6 +1107,12 @@ a.copy {
 
 @media (max-width: 749px) {
   /* HEADER */
+  .header {
+    width: 100%;
+    max-width: 100%;
+    min-height: 600px;
+    background-position: left center;
+  }
 
   /* TRENDS */
   .trends-wrapper {
@@ -1212,17 +1220,23 @@ a.copy {
     max-width: 100%;
     margin: 0;
   }
+
   section.news,
   section.search,
   .searchfield-label,
   .subscribe-label,
   input.subscribe,
-  .search-field {
+  .search-field,
+  form.search-form {
     width: 100%;
     max-width: 100%;
   }
-  .search-field,
+
   .subscribe {
+    width: 100%;
+    max-width: 100%;
+  }
+  form.subscribe-form {
     width: 100%;
     max-width: 100%;
   }
@@ -1236,22 +1250,24 @@ a.copy {
   }
 
   /* categories */
+  section.categories {
+    margin-bottom: 40px;
+  }
+
   li.categories {
     max-width: 100%;
   }
 
   /* SHOP */
-  .shop {
+  section.shop {
     flex-direction: column;
+    margin-top: 0;
   }
 
   .shop-wrapper {
     flex-direction: column;
   }
 
-  .shop-item-wrapper {
-    flex-grow:1;
-  }
   .shop-item {
     width: 100%;
   }
@@ -1262,7 +1278,21 @@ a.copy {
   .shop-item:nth-child(n+1) {
     margin-top: 25px;
   }
-  
+
+  .shop-item-wrapper {
+    flex-grow:1;
+  }
+  .shop-item-picture {
+    padding: 0 20px 20px;
+  }
+
+  .shop-item-picture {
+    width: 285px;
+    height: 285px;
+    background-color: #f4f7f6;  
+  }
+
+
   /* FOOTER */
   .footer {
     width: 100%;
