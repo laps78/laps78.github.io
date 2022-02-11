@@ -63,6 +63,27 @@ html {
   opacity: 0.6;
   z-index: -10;
 }
+.menu-button {
+
+  position: absolute;
+  top: 50px;
+  right: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 25px;
+  align-items: center;
+  
+  display: none;
+}
+
+.button-line {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color:#eeeeee;
+}
 
 .menu {
   display: flex;
@@ -785,16 +806,20 @@ button.shoping {
 .social-bar {
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1170px;
+  min-width: 100%;
+  width: 100%;
+  max-width: 1170px;
   height: 83px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 auto;
   background-color: #f4f7f6;
 }
 
@@ -1084,7 +1109,26 @@ a.copy {
 
 @media (min-width: 750px) and (max-width: 1199px) {
   /* HEADER */
-
+  .menu {
+    display: none;
+  }
+  .menu-button {
+    position: absolute;
+    top: 50px;
+    right: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+  }
+  .button-line {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color:#eeeeee;
+  }
   /* TRENDS */
   .trends-wrapper {
     flex-wrap: wrap;
@@ -1123,23 +1167,10 @@ a.copy {
     background-position: 33% center;
     padding: 20px;
   }
-
   .menu-button {
-    position: absolute;
+    display: flex;
     top: 30px;
     right: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 25px;
-    height: 25px;
-    align-items: center;
-  }
-  .button-line {
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color:#eeeeee;
   }
 
   .menu-container{
