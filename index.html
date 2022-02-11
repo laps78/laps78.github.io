@@ -60,6 +60,7 @@
     </div>
   </div>
 
+  <!-- HEADER -->
   <header class="header">
       <div class="menu-button">
         <div class="button-line"></div>
@@ -96,6 +97,7 @@
       <h1 class="h1-title">Блог о творчестве, спорте, и образе жизни</h1>
     </div>
   </header>
+  
   <!-- TRENDS -->
   <section class="trends">
     <h2 class="section-title">сейчас в тренде</h2>
@@ -173,6 +175,7 @@
       <!-- /trend 4-->
     </div>
   </section>
+  
   <!-- PAGE CONTAINER -->
   <div class="page-container">
     <!-- MAIN -->
@@ -634,9 +637,9 @@
         </section>
         <!-- /section "categories" -->
       </aside>
-    </div>
+  </div>
 
-    <!-- shop -->
+  <!-- SHOP -->
   <section class="shop">
       <h3 class="section-title">наши изделия</h3>
       <div class="shop-wrapper">
@@ -644,12 +647,14 @@
         <article class="shop-item">
           <div class="shop-item-wrapper">
             <picture class="shop-item-picture">
-              <source media="(max-width: 749px)"
-                srcset="images/shop-item-mobile1.jpg">
-              <source media="(min-width:750px) and (max-width: 1199px)" 
-                srcset="images/shop-item-tablet1.jpg">
-              <source media="(min-width: 1200px)"
-                srcset="images/shop-item-desk1.jpg">
+              <source media="(max-width: 640px)"
+                srcset="images/shop-item-mobile1.jpg"
+                type="image/webp"
+              >
+              <source media="(min-width: 641px) and (max-width: 1199px)" 
+                srcset="images/shop-item-tablet1.jpg"
+                type="image/webp"
+              >
               <img src="images/shop-item-desk1.jpg" alt="подушки на диван">
             </picture>
             <div class="shop-item-border">
@@ -673,12 +678,10 @@
         <article class="shop-item">
           <div class="shop-item-wrapper">
             <picture class="shop-item-picture">
-              <source media="(max-width: 749px)"
+              <source media="(max-width: 640px)"
                 srcset="images/shop-item-mobile2.jpg">
-              <source media="(min-width:750px) and (maxwidth: 1199px)"
+              <source media="(min-width: 641px) and (max-width: 1199px)"
                 srcset="images/shop-item-tablet2.jpg">
-              <source media="(min-width: 1200px)"
-                srcset="images/shop-item-desk2.jpg">
               <img src="images/shop-item-desk2.jpg" alt="кукла &laquo;зайчик&raquo;">
             </picture>
             <div class="shop-item-border">
@@ -703,12 +706,10 @@
         <article class="shop-item">
           <div class="shop-item-wrapper">
             <picture class="shop-item-picture">
-              <source media="(max-width: 749px)"
+              <source media="(max-width: 640px)"
                 srcset="images/shop-item-mobile1.jpg">
-              <source media="(min-width: 750px) and (maxwidth: 1199px)" 
+              <source media="(min-width: 641px) and (max-width: 1199px)" 
                 srcset="images/shop-item-tablet1.jpg">  
-              <source media="(min-width: 1200px)"
-                srcset="images/shop-item-desk3.jpg">
               <img src="images/shop-item-desk3.jpg" alt="шестиугольная рамка">
             </picture>
             <div class="shop-item-border">
@@ -733,6 +734,7 @@
       </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
       <div class="social-bar">
         <ul class="social-icons">
