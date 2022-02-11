@@ -1113,6 +1113,13 @@ a.copy {
   background-color: rgb(50, 50, 50);
 }
 @media (max-width: 1199px) {
+
+  /* POPUP */
+  .popup-form-wrapper {
+    width: 100%;
+    max-width: 390px;
+  }
+
   /* post */
 
   article.post,
@@ -1263,6 +1270,13 @@ a.copy {
 }
 
 @media (max-width: 640px) {
+  /* POPUP */
+  .popup-form-wrapper {
+    width: 100%;
+    max-width: 330px;
+    margin: 0 15px;
+  }
+
   /* HEADER */
   .header {
     position: relative;
