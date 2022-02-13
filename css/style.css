@@ -710,7 +710,7 @@ img.shop-item-picture {
 }
 
 .shop-item-picture, 
-img.shop-item-picture {
+.shop-item-image {
   box-sizing: border-box;
   height: 200px;
   max-width: 300px;
