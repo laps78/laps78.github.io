@@ -699,7 +699,6 @@ a.categories-index {
   justify-content: space-between;
   flex-grow: 1;
   max-width: 350px;
-  height: 440px;
 }
 
 img.shop-item-picture {
@@ -712,15 +711,15 @@ img.shop-item-picture {
 .shop-item-picture, 
 .shop-item-image {
   box-sizing: border-box;
-  height: 200px;
-  max-width: 300px;
+  width: 100%;
+  max-width: 100%;
   position: relative;
   margin: 0 auto -50px;
   z-index: 10;
 }
 
 .shop-item-image {
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 .shop-item-border {
@@ -753,10 +752,6 @@ img.shop-item-picture {
 .shop-item-link {
   color: #b59f5b;
   text-decoration: none;
-}
-
-.shop-item-text:hover {
-  height: 54px;
 }
 
 .offer {
@@ -1205,19 +1200,9 @@ a.copy {
 
   .shop-wrapper {
     flex-wrap: wrap;
-    align-items: flex-start;
+    justify-content: flex-start;
   }
 
-  .shop-item {
-    max-width: 50%;
-  }
-  .shop-item-wrapper {
-    margin: 0 25px;
-  }
-
-  .shop-item-wrapper:nth-child(n+3) {
-    margin: 25px 25px 0;
-  }
   /* FOOTER */
   .footer {
     width: 100%;
@@ -1257,14 +1242,27 @@ a.copy {
   .trend:nth-child(n+3) {
     margin-top: 3px;
   }
-
-  /* ASIDE */
   
   /* SHOP */
-  .shop-item-picture
-  img.shop-item-picture {
-    width: 285px;
-    max-width: 100%;
+  .shop-wrapper {
+    
+  }
+  .shop-item {
+    max-width: calc(50% - 25px);
+  }
+  
+  .shop-item:nth-child(2) {
+    margin: 0;
+  }
+  .shop-item:nth-child(odd) {
+    margin-right: 25px;
+  }
+  .shop-item:nth-child(n+3) {
+    margin-top: 25px;
+  }
+
+  .shop-item-image {
+    margin-bottom: -50px;
   }
   /* FOOTER */
 }
@@ -1406,9 +1404,15 @@ a.copy {
 
   .shop-wrapper {
     flex-direction: column;
+    width: 100%;
+    max-width: 100%;
   }
-
+  .shop-item-wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
   .shop-item {
+    width: 100%;
     max-width: 100%;
   }
 
@@ -1419,21 +1423,19 @@ a.copy {
     margin-top: 25px;
   }
 
-  .shop-item-wrapper {
-    flex-grow:1;
+  .shop-item {
+    flex-grow: 1;
   }
   .shop-item-picture {
     padding: 0 20px 20px;
   }
 
-  .shop-item-picture {
-    width: 285px;
-    height: 285px;
-    background-color: #f4f7f6;  
+  .shop-item-image {
+    padding-bottom: 50px;
   }
 }
 
-@media (max-width: 749px) and (orientation: landscape) {
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
   /* TRENDS */
   .trends-wrapper {
     flex-wrap: wrap;
