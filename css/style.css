@@ -1244,9 +1244,6 @@ a.copy {
   }
   
   /* SHOP */
-  .shop-wrapper {
-    
-  }
   .shop-item {
     max-width: calc(50% - 25px);
   }
