@@ -1,3 +1,5 @@
+
+/* GLOBAL */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,13 +16,43 @@ body{
   align-items: center;
   justify-content: space-between;
 }
+
+/* HEADER */
 .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 100%;
   height: 150px;
   background-color: aqua;
 }
+.page_content_wrapper {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+}
+/* main */
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  justify-self: flex-start;
+  width: 25%;
+  max-width: 300px;
+  height: 100%;
+  min-height: 100%;
+  background-color: aquamarine;
+}
 
+/* CLOCK */
 .clock__wrapper {
   display: flex;
   flex-direction: column;
@@ -34,10 +66,15 @@ body{
   font-weight: bold;
   color: #0000cc;
 }
+/* FOOTER */
 
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 100%;
   height: 50px;
   background-color: grey;
+  color:aliceblue;
 }
