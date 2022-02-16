@@ -1,4 +1,3 @@
-
 /* GLOBAL */
 * {
   box-sizing: border-box;
@@ -26,6 +25,7 @@ body{
   max-width: 100%;
   height: 150px;
   background-color: aqua;
+  border-radius: 0.25rem;
 }
 .page_content_wrapper {
   display: flex;
@@ -45,11 +45,13 @@ main {
   justify-content: flex-start;
   align-items: center;
   justify-self: flex-start;
-  width: 25%;
+  width: 100%;
   max-width: 300px;
   height: 100%;
   min-height: 100%;
   background-color: aquamarine;
+  border-radius: 0.25rem;
+
 }
 
 /* CLOCK */
@@ -58,9 +60,19 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+}
+.clock__wrapper:nth-child(n+4) {
+  margin-top: 5px;
+} 
+
+.clock__wrapper:nth-child(3n+2){
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-#clock {
+.clock {
   font-family: Tahoma, sans-serif;
   font-size: 20px;
   font-weight: bold;
@@ -77,4 +89,6 @@ main {
   height: 50px;
   background-color: grey;
   color:aliceblue;
+  border-radius: 0.25rem;
+
 }
