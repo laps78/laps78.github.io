@@ -1,5 +1,10 @@
 
-function displayCanvas(){
+
+
+
+
+//CLOCK
+function displayCanvas() {
   var canvasHTML = document.getElementById("myCanvas");
   var contextHTML = canvasHTML.getContext("2d");
   contextHTML.strokeRect(0, 0, canvasHTML.width, canvasHTML.height);
@@ -108,4 +113,13 @@ function(){
     document.getElementById("clock").innerHTML = d.toLocaleTimeString();
     displayCanvas();
 }
-, 1000);
+  , 1000);
+
+//popup close
+
+let popupCloseBtn = document.querySelector("spopup_close_btn");
+popupCloseBtn.addEventListener("click", popupClose);
+
+function popupClose() {
+    this.classList.toggle("visually-hidden");
+  } 
