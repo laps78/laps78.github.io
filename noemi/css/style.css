@@ -432,17 +432,21 @@ a.new-post {
 }
 .searchfield-label {
   display: flex;
-  flex-grow: 1;
+  flex: 1;
 }
 
 .search-field {
   padding-left: 20px;
   height: 48px;
+  width: 100%;
   font-size: 13px;
   font-weight: 400;
   font-family: open-sans;
   color: #000000;
+  border: none;
   background-color: #f4f7f6;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .search-field:focus {
@@ -458,16 +462,14 @@ a.new-post {
   background-repeat: no-repeat;
   background-size: 18px;
   background-position: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
-
+.search-button:hover {
+  background-color: #323232;
+}
 /* subscribe */
 
-section.subscribe {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 270px;
-}
 form.subscribe-form {
   display: flex;
   flex-direction: column;
@@ -492,6 +494,9 @@ input.subscribe {
   font-family: open-sans;
   color: #000000;
   background-color: #f4f7f6;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 button.subscribe {
@@ -507,6 +512,9 @@ button.subscribe {
   font-family: open-sans;
   color: #ffffff;
   background-color: #b59f5b;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 button.subscribe:hover {
