@@ -344,12 +344,6 @@ a.tag-link:hover {
   max-width: 270px;
 }
 
-.section-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .section-title {
   display: flex;
   flex-direction: column;
@@ -429,6 +423,7 @@ a.new-post {
 
 .search-form {
   display: flex;
+  margin-bottom: 30px;
 }
 .searchfield-label {
   display: flex;
@@ -475,6 +470,7 @@ form.subscribe-form {
   flex-direction: column;
   max-width: 270px;
   flex-grow: 1;
+  margin-bottom: 30px;
 }
 .subscribe-label {
   max-width: 270px;
@@ -526,6 +522,7 @@ button.subscribe:hover {
 section.tags {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
 ul.tags {
@@ -552,32 +549,11 @@ a.tags {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 12px;
-  line-height: 40px;
   font-weight: 700;
   font-family: open-sans;
 }
 
 /* categories */
-
-section.categories {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex-grow: 1;
-  width: 100%;
-  max-width: 100%;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-ul.categories {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
-}
 li.categories {
   display: flex;
   flex-direction: row;
