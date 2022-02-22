@@ -1,6 +1,9 @@
-
-
-
+/* TODO 
+1. .clock {
+  Backgroung img: totems or beautifull sites of sities
+  - capitals of all basic time zones
+  Popup: SELECT City/Timesone
+  GOOGLE THEM!!! */
 
 
 //CLOCK
