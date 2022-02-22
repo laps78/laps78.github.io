@@ -117,9 +117,11 @@ function(){
 
 //popup close
 
-let popupCloseBtn = document.querySelector("spopup_close_btn");
-popupCloseBtn.addEventListener("click", popupClose);
+window.onload = () => {
+  let popupCloseBtn = document.querySelector("#popup_close_btn");
+  popupCloseBtn.addEventListener("click", popupClose);
+}
 
-function popupClose() {
-    this.classList.toggle("visually-hidden");
+function popupClose(popupCloseBtn) {
+  popupCloseBtn.classList.add("visually-hidden");
   } 
