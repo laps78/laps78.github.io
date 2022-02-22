@@ -699,12 +699,18 @@ img.shop-item-picture {
   font-weight: 700;
   font-family: open-sans;
 }
-
-button.shoping {
+.shopping {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 140px;
   height: 48px;
   background-color: #b59f5b;
   border: none;
+  padding: 0 auto;
+}
+
+a.shopping {  
   font-size: 14px;
   color: #ffffff;
   font-weight: 700;
@@ -715,9 +721,6 @@ button.shoping {
 /* FOOTER */
 
 .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   max-width: 1200px;
   padding: 65px 15px 0 15px;
   margin: 0 auto;
@@ -738,9 +741,9 @@ button.shoping {
   min-width: 100%;
   width: 100%;
   max-width: 1170px;
-  height: 83px;
-  padding: 0 auto;
   background-color: #f4f7f6;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .social-icon {
