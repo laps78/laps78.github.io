@@ -211,7 +211,7 @@ main {
   text-transform: uppercase;
 }
 
-.clock_menu_button {
+.clock_add_button {
   width: 80%;
   height: calc(25 / 1rem);
   margin-top: 1rem;
@@ -267,7 +267,7 @@ main {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
-
+  transform: scale(1);
   z-index: 9999;
 }
 .clock_add_popup {
@@ -278,6 +278,7 @@ main {
   width: 50vw;
   height: 50vh;
   padding: 0.5rem;
+  border-radius: 0.5rem;
   background-color: #ffffff;
   box-shadow: 0.5rem 0.5rem 0.5rem 1px rgba(0, 0, 0, 0.1);
 }
@@ -304,4 +305,5 @@ main {
   width: 1px;
   height: 1px;
   clip: rect(1px, 1px, 1px, 1px);
+  transform: scale(0);
 }

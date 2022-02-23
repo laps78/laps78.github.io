@@ -118,13 +118,23 @@ function(){
 }
   , 1000);
 
-//popup close
-
 window.onload = () => {
+  //popup elems init
   let popupCloseBtn = document.querySelector("#popup_close_btn");
-  popupCloseBtn.addEventListener("click", popupClose);
-}
+  let popupOpenBtns = document.querySelectorAll('.clock_add_button');
+  let popup = document.querySelector('.popup__wrapper');
+  
+  //open
+  popupOpenBtns.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      popup.classList.toggle('visually-hidden');
 
-function popupClose(popupCloseBtn) {
-  popupCloseBtn.classList.add("visually-hidden");
-  } 
+    });
+  });
+  //close
+  popupCloseBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    popup.classList.toggle('visually-hidden');
+  });
+};
