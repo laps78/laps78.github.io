@@ -137,4 +137,10 @@ window.onload = () => {
     e.preventDefault();
     popup.classList.toggle('visually-hidden');
   });
+
+  document.addEventListener('click', (e) => {
+    if ((e.target === popup)) {
+      popup.classList.toggle('visually-hidden');
+    }
+  });
 };
