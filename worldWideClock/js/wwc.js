@@ -3,7 +3,9 @@
   Backgroung img: totems or beautifull sites of sities
   - capitals of all basic time zones
   Popup: SELECT City/Timesone
-  GOOGLE THEM!!! */
+  GOOGLE THEM!!!
+2. Make generating clock id-s dynamic  
+*/
 
 
 //CLOCK
@@ -118,6 +120,8 @@ function(){
 }
   , 1000);
 
+/* INTERACTIVE */
+
 window.onload = () => {
   //popup elems init
   let popupCloseBtn = document.querySelector("#popup_close_btn");
@@ -127,20 +131,22 @@ window.onload = () => {
   //open
   popupOpenBtns.forEach((button) => {
     button.addEventListener('click', (e) => {
-      e.preventDefault();
-      popup.classList.toggle('visually-hidden');
+        e.preventDefault();
+        popup.classList.toggle('visually-hidden');
 
-    });
+      });
   });
-  //close
+
+  //close from button
   popupCloseBtn.addEventListener('click', (e) => {
     e.preventDefault();
     popup.classList.toggle('visually-hidden');
   });
 
+  //Close from missclick
   document.addEventListener('click', (e) => {
     if ((e.target === popup)) {
       popup.classList.toggle('visually-hidden');
-    }
+    };
   });
 };
