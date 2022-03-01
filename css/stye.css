@@ -20,6 +20,8 @@ body{
   left: 50px;
   width: 150px;
   border-radius: 75px;
+  background: url("../img/ava-laps.jpg");
+  background-size: cover;
   border: 5px; solid #ffffff;
 }
 
