@@ -6,3 +6,23 @@ body{
   display: flex;
   flex-direction: column;
 }
+
+.header__wrapper {
+  display: flex;
+  position: relative;
+  border 5px solid #ffffff;
+  background-color: aquamarine;
+}
+
+.header__photo {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 150px;
+  border-radius: 75px;
+  border: 5px; solid #ffffff;
+}
+
+.main_menu_link {
+  text-decoration: none;
+}
