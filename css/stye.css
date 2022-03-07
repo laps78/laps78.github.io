@@ -2,43 +2,71 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
   display: flex;
   flex-direction: column;
+  scroll-behavior: smooth;
 }
 
 .header__wrapper {
-  display: flex;
   width: 100%;
-  position: relative;
-  border:: 5px solid #ffffff;
-  background-color: blue;
-  border-radius: 0.5rem;
-  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
   display: flex;
   width: 100%;
-  height: 125px;
-  
+  height: 100vh;
+  background-image: url("../img/web-application-development.jpg");
+  background-size: cover;
+  z-index: 0;
 }
+
+.header:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  opacity: 0.8;
+  z-index: -10;
+}
+.header_upper_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem;
+}
+
+.personal_data_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.name__wrapper {
+  padding-top: 0.4rem;
+}
+
+.name {
+  color: #ffffff;
+}
+
 .header_menu_wrapper {
   width: 100%;
   display: flex;
+  justify-content: flex-end;
 }
 
 .header__photo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
   box-sizing: content-box;
-  min-width: 150px;
-  min-height: 150px;
-  border-radius: 75px;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
   background: url("../img/ava-laps.jpg");
   background-size: cover;
-  border: 5px solid #ffffff;
+  border: 3px solid #ffffff;
 }
 
 .main__menu{
@@ -60,7 +88,49 @@ body {
   text-decoration: none;
 }
 .main_menu_link:hover {
-  background-color: rgb(0, 102, 255);
-  border: 1px solid white;
-  border-radius: 0 0 1rem 0;
+  color: #b59f5b;
+  text-decoration: underline;
+}
+
+.header_content_centered{
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1; 
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header__title {
+  text-align: center;
+  color:#ffffff;
+}
+
+.header__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 2.5rem;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.header_button_link {
+  text-decoration: none;
+}
+
+.header__button:hover {
+  color: #b59f5b;
+  border: 1px solid #b59f5b;
+  background-color: #9b8c5f4f;
+}
+
+.page__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
