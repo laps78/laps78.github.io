@@ -133,7 +133,6 @@ window.onload = () => {
     button.addEventListener('click', (e) => {
         e.preventDefault();
         popup.classList.toggle('visually-hidden');
-
       });
   });
 
