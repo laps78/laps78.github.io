@@ -33,6 +33,7 @@ body {
   opacity: 0.8;
   z-index: -10;
 }
+
 .header_upper_wrapper {
   display: flex;
   justify-content: space-between;
@@ -141,3 +142,4 @@ body {
   width: 1px;
   height: 1px;
   clip: rect(1px, 1px, 1px, 1px);
+}

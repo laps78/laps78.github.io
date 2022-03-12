@@ -18,5 +18,6 @@ indow.onload = () => {
   document.addEventListener('click', (e) => {
     if ((e.target === popup)) {
       popup.classList.toggle('visually-hidden');
-    };
+    }
+  });
 };
