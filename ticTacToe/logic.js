@@ -1,6 +1,6 @@
 let players = ['x', 'o'];
 let activePlayer = 0;
-let boardSize = 3;
+let boardSize = 3;//change this parameter to adjust the fieldsize
 let board = [];
 
 //generating the board of boardSize
