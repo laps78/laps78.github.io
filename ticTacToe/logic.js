@@ -15,6 +15,7 @@ function generateBoard() {
 }
 
 function startGame() {
+  activePlayer = 0;
   renderBoard(generateBoard(boardSize));
   return board;
 }
