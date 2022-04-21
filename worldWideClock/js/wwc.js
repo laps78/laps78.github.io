@@ -4,7 +4,7 @@
   - capitals of all basic time zones
   Popup: SELECT City/Timesone
   GOOGLE THEM!!!
-2.
+2. different clock form factors - new feature
 */
 
 //unique ID generator
