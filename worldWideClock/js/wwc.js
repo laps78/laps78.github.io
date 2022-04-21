@@ -4,20 +4,25 @@
   - capitals of all basic time zones
   Popup: SELECT City/Timesone
   GOOGLE THEM!!!
-2. Make generating clock id-s dynamic  
+2.
 */
 
+//unique ID generator
+function generateId() {
+  let timeStamp = Date.now();
+  return 'id' + timeStamp;
+}
 
 //CLOCK
 function displayCanvas() {
-  var canvasHTML = document.getElementById("myCanvas");
-  var contextHTML = canvasHTML.getContext("2d");
+  let canvasHTML = document.getElementById("myCanvas");
+  let contextHTML = canvasHTML.getContext("2d");
   contextHTML.strokeRect(0, 0, canvasHTML.width, canvasHTML.height);
 
   //Calculating clocktable centre & size
-  var radiusClock = canvasHTML.width / 2 - 10;
-  var xCenterClock = canvasHTML.width / 2;
-  var yCenterClock = canvasHTML.height / 2;
+  let radiusClock = canvasHTML.width / 2 - 10;
+  let xCenterClock = canvasHTML.width / 2;
+  let yCenterClock = canvasHTML.height / 2;
 
   //Clear screen 
   contextHTML.fillStyle = "#ffffff";
@@ -33,13 +38,13 @@ function displayCanvas() {
   contextHTML.closePath();
 
   //Drawing clocktable pins & points
-  var radiusNum = radiusClock - 10;	
-  var radiusPoint;
+  let radiusNum = radiusClock - 10;	
+  let radiusPoint;
   for(var tm = 0; tm < 60; tm++){
   contextHTML.beginPath();
   if(tm % 5 == 0){radiusPoint = 5;}else{radiusPoint = 2;} //for points selection
-  var xPointM = xCenterClock + radiusNum * Math.cos(-6*tm*(Math.PI/180) + Math.PI/2);
-  var yPointM = yCenterClock - radiusNum * Math.sin(-6*tm*(Math.PI/180) + Math.PI/2);
+  let xPointM = xCenterClock + radiusNum * Math.cos(-6*tm*(Math.PI/180) + Math.PI/2);
+  let yPointM = yCenterClock - radiusNum * Math.sin(-6*tm*(Math.PI/180) + Math.PI/2);
   contextHTML.arc(xPointM, yPointM, radiusPoint, 0, 2*Math.PI, true);
   contextHTML.stroke();
   contextHTML.closePath();
@@ -49,8 +54,8 @@ function displayCanvas() {
   for(var th = 1; th <= 12; th++){
 contextHTML.beginPath();
 contextHTML.font = 'bold 25px sans-serif';
-var xText = xCenterClock + (radiusNum - 30) * Math.cos(-30*th*(Math.PI/180) + Math.PI/2);
-var yText = yCenterClock - (radiusNum - 30) * Math.sin(-30*th*(Math.PI/180) + Math.PI/2);
+let xText = xCenterClock + (radiusNum - 30) * Math.cos(-30*th*(Math.PI/180) + Math.PI/2);
+let yText = yCenterClock - (radiusNum - 30) * Math.sin(-30*th*(Math.PI/180) + Math.PI/2);
 if(th <= 9){
   contextHTML.strokeText(th, xText - 5 , yText + 10);
 }else{
@@ -62,14 +67,14 @@ contextHTML.closePath();
 
 
   //DRAWING ARROWS
-  var lengthSeconds = radiusNum - 10;
-  var lengthMinutes = radiusNum - 15;
-  var lengthHour = lengthMinutes / 1.5;
-  var d = new Date();
+  let lengthSeconds = radiusNum - 10;
+  let lengthMinutes = radiusNum - 15;
+  let lengthHour = lengthMinutes / 1.5;
+  let d = new Date();
   //Calculating arrow corner clockwise
-  var t_sec = 6 * d.getSeconds();
-  var t_min = 6 * (d.getMinutes() + (1/60) * d.getSeconds());
-  var t_hour = 30 * (d.getHours() + (1/60) * d.getMinutes());
+  let t_sec = 6 * d.getSeconds();
+  let t_min = 6 * (d.getMinutes() + (1/60) * d.getSeconds());
+  let t_hour = 30 * (d.getHours() + (1/60) * d.getMinutes());
 
   //Drawing seconds arrow
   contextHTML.beginPath();
@@ -114,9 +119,9 @@ contextHTML.closePath();
 
 window.setInterval(
 function(){
-    var d = new Date();
-    document.getElementById("clock").innerHTML = d.toLocaleTimeString();
-    displayCanvas();
+  let d = new Date();
+  document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+  displayCanvas();
 }
   , 1000);
 
