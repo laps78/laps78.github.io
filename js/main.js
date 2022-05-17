@@ -1,14 +1,23 @@
-const anchors = document.querySelectorAll('inner_link');
+window.omload = function userApi() {
+  const anchors = document.querySelectorAll('a[href*="#"]');
 
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
+  //test start
+  console.log(anchors);
+  debugger;
+  //test end
+
+  for (let anchor of anchors) {
+    anchor.addEventListener("click", function (event) {
+      event.preventDefault();
+      const blockID = anchor.getAttribute('href');
     
-    const blockID = anchor.getAttribute('href').substr(1);
-    
-    document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
+      console.log(blockID);
+      debugger;
+
+      document.querySelector('' + blockID).scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
     });
-  });
+  }
 }
