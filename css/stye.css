@@ -183,6 +183,24 @@ body {
   text-align: center;
 }
 
+/* FOOTER */
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__column {
+  width: 30%;
+  padding: 0.125rem 1rem;
+  margin: 1rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  
+}
+
 /* hide elements */
 .visually-hidden {
   position: absolute;
