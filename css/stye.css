@@ -153,8 +153,7 @@ body {
   align-items: flex-start;
 }
 .sertificate__miniature {
-  width: 200px;
-  height: 150px;
+  width: 100%;
   padding: 0.3rem;
 }
 
@@ -164,6 +163,8 @@ body {
   flex-direction: column;
   align-items: center;
   border-radius: calc(1rem/3);
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .sertificate__preview:nth-child(n+1) {
@@ -177,7 +178,7 @@ body {
 .sertificate__preview:hover {
   box-shadow: 0.25rem 0.25rem 0.25rem rgba(0,0,0, 0.2);
 }
-red
+
 .sertificate__title {
   text-align: center;
 }
@@ -188,4 +189,33 @@ red
   width: 1px;
   height: 1px;
   clip: rect(1px, 1px, 1px, 1px);
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+  .sertificate__preview {
+    width: calc(50% - 1rem);
+  }  
+}
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape){
+  .sertificate__preview {
+    width: calc(25% - 1rem);
+  }  
+}
+@media (max-width: 640px) {  
+  .sertificate__preview {
+    width: 100%;
+  }
+
+  .sertificate__preview:nth-child(n+1) {
+    margin-left: 0;
+  }
+  
+  .sertificate__preview:nth-child(n+5) {
+    margin-top: 0;
+  }
+}
+@media (max-width: 640px) and (orientation: landscape){
+  .sertificate__preview {
+    width: calc(50% - 1rem);
+  }  
 }
