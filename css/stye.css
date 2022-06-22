@@ -199,7 +199,17 @@ body {
   border: 1px solid red;
   display: flex;
   flex-direction: column;
-  
+}
+/* Copyrights */
+.copy__wrapper {
+text-align: center;
+}
+
+.copy {
+  text-decoration: none;
+  font-style: italic;
+  font-size: 0.7rem;
+  color: #000000;
 }
 
 /* POPUPS */

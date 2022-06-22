@@ -1,39 +1,28 @@
-window.omload = function userApi() {
-  const anchors = document.querySelectorAll('a[href*="#"]');
-
-  for (let anchor of anchors) {
-    anchor.addEventListener("click", function (event) {
-      event.preventDefault();
-      const blockID = anchor.getAttribute('href');
-    
-      console.log(blockID);
-      debugger;
-
-      document.querySelector('' + blockID).scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    });
-  };
+window.onload = function userApi() {
+  
   //popups
+  const linksPopupOpen = document.querySelectorAll('.link_popup_open');
+  const popup = document.querySelectorAll('.popup__wrapper');
+  const popupCloseButtons = document.querySelectorAll('popup_close_btn');
+
   function popupClose(popup) {
     popup.classList.toggle('visually-hidden');
   }
   //close popup from missclick
   document.addEventListener('click', (e) => {
-      if ((e.target === popup)) {
-        popupClose(e.target);
-      };
+    if (e.target === popup) {
+      popupClose(e.target);
+    };
   });
   
   //sertificate popup
-  const linkPopupOpen = document.querySelectorAll('.link_popup_open');
-  const sertificatePopup = document.querySelector('.popup__wrapper');
-  const sertificatePopupCloseButton = document.querySelector('#sertificate_popup_close_btn');
+ 
 
   //close popup from button
-  sertificatePopupCloseButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    popupClose(sertificatePopup);
-  })
-}
+  popupCloseButtons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      popup.classList.toggle('visually-hidden');
+    });
+  });  
+};
