@@ -123,6 +123,7 @@ body {
 
 .header__button:hover {
   color: #b59f5b;
+  font-weight: 700;
   border: 1px solid #b59f5b;
   background-color: #9b8c5f4f;
 }
@@ -189,17 +190,83 @@ body {
   background-color: #000000;
   color: #ffffff;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-.footer__column {
+
+.footer_left_column {
   width: 30%;
   padding: 0.125rem 1rem;
   margin: 1rem;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
 }
+
+.footer_right_column {
+  width: 70%;
+  padding: 0.125rem 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__span {
+  color: rgb(213, 212, 212);
+}
+/* footer socials */
+.social-bar {
+  display: flex;
+  flex-wrap: wrap;
+}
+.social-bar {
+  display: flex;
+  width: 100%;
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.social-icon {
+  list-style-type: none;
+}
+
+.social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+.social-icon:nth-child(n+2) {
+  margin-left: 0.5rem;
+}
+
+.social-icon-vk {
+  background-image: url("../svg/VK_white.svg");
+}
+
+.social-icon-telegram {
+  background-image: url("../svg/Telegram_white.svg");
+}
+
+.social-icon-facebook {
+  background-image: url("../svg/Facebook_white.svg");
+}
+
+.social-icon-whatsapp {
+  background-image: url("../svg/WhatsApp_white.svg");
+}
+
+.social-icon-viber {
+  background-image: url("../svg/Viber_white.svg");
+}
+
+
 /* Copyrights */
 .copy__wrapper {
 text-align: center;
@@ -289,6 +356,20 @@ text-align: center;
   .sertificate__preview:nth-child(n+5) {
     margin-top: 0;
   }
+
+  /* footer */
+  .footer {
+    flex-wrap: wrap;
+  }
+  .footer_left_column {
+    width: 100%;
+  }
+  
+  .footer_right_column {
+    width: 100%;
+  }
+  
+
 }
 @media (max-width: 640px) and (orientation: landscape){
   .sertificate__preview {
