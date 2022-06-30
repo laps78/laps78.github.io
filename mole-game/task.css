@@ -4,7 +4,7 @@
 }
 
 .hole-game {
-  width: 100%;
+  width: 390px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -14,8 +14,8 @@
   margin-bottom: 20px;
 }
 .hole {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   margin: 0 15px 30px;
   background: gray;
   border-radius: 50%;
