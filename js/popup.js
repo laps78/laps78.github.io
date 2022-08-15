@@ -7,9 +7,6 @@ class Popup {
     this.title = title;
     this.content = content;
 
-    console.log(this.content);
-    console.log(typeof(this.content));
-
     this.open();
     this.fillHeader();
     this.fillContent(this.content);

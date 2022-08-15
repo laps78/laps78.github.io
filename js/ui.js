@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', onloadEventhandler);
 
 function onloadEventhandler() {
-  console.log('DOM готов!')
   activateSertificateLinks();
 };
 
