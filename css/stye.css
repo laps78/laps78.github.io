@@ -1,4 +1,5 @@
 body {
+  min-width: 340px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -312,22 +313,29 @@ text-align: center;
   background-position: right center;
 }
 
-/*sertificate__popup*/
-.sertificate__popup {
+/*popup*/
+.popup {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  width: 50vw;
-  height: 50vh;
+  width: 65vw;
+  max-height: 90vh;
   padding: 0.5rem;
   border-radius: 0.5rem;
   background-color: #ffffff;
   box-shadow: 0.5rem 0.5rem 0.5rem 1px rgba(0, 0, 0, 0.1);
 }
 
+.popup__content {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* hide elements */
-.visually-hidden {
+.visualy-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
