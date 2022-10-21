@@ -10,7 +10,7 @@ holes.forEach(hole => {
       console.log('catch!');
       killCount += 1;
       if (killCount === 10) {
-        alert('Победа!');
+        alert('You win!');
         killCount = 0;
         missCount = 0;
         missCounter.textContent = missCount;
