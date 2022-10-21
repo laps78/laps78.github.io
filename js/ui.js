@@ -20,10 +20,10 @@ function scrollTopButtonHideOrShow() {
   const scrollTopButton = document.getElementById('scrollTop');
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     scrollTopButton.style.display = 'block';
-    document.addEventListener('click', scrollToTop);
+    scrollTopButton.addEventListener('click', scrollToTop);
   } else {
     scrollTopButton.style.display = 'none';
-    document.removeEventListener(scrollToTop);
+    scrollTopButton.removeEventListener(scrollToTop);
   }
 }
 
