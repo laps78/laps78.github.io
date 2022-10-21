@@ -147,7 +147,8 @@ body {
 }
 
 /* SERTIFICATIONS SPECIFIC STYLES */
-.sertifications_articles_wrapper {
+.sertifications_articles_wrapper,
+.portfolio_articles_wrapper {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -304,6 +305,7 @@ text-align: center;
   position: absolute;
   top: -26px;
   align-self: flex-end;
+  appearance: none;
   -webkit-appearence: none;
   -moz-appearance: none;
   border: none;
