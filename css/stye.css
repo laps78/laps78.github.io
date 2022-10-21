@@ -145,6 +145,56 @@ body {
 .section__paragraph {
   margin-top: 0;
 }
+/* PORTFOLIO SPECIFIC STYLES */
+.portfolio__article {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid grey;
+}
+.portfolio_item_wrapper {
+  display: flex;
+  border: 1px solid salmon;
+}
+.portfolio_column_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 60%;
+  margin: 3px;
+  padding: 0.5rem;
+  border: 1px solid red;
+}
+.project_description_title {
+  margin: 0.25rem 0;
+}
+.project_skills_badge_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill__badge{
+  padding: 0.25rem;
+  margin-bottom: 0.25rem;
+  background-color: #ffd967e3;
+  border: 0.25rem solid #f6ca46ed;
+  border-radius: 0.25rem;
+}
+.skill__badge:nth-child(n+1) {
+  margin-left: 0.25rem;
+}
+.portfolio_column_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: 3px;
+  padding: 0.5rem;
+  border: 1px solid green;
+}
+.portfolio_project_screenshot {
+  width: 90%;
+}
 
 /* SERTIFICATIONS SPECIFIC STYLES */
 .sertifications_articles_wrapper,
@@ -154,6 +204,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+  padding-bottom: 1rem;
 }
 .sertificate__miniature {
   width: 100%;
@@ -183,7 +234,8 @@ body {
   box-shadow: 0.25rem 0.25rem 0.25rem rgba(0,0,0, 0.2);
 }
 
-.sertificate__title {
+.sertificate__title,
+.portfolio_item_title {
   text-align: center;
 }
 
