@@ -155,6 +155,9 @@ p {
   flex-direction: column;
   width: 100%;
 }
+.portfolio__article:hover {
+  background-color: rgba(128, 128, 128, 0.042);
+}
 .portfolio_item_wrapper {
   display: flex;
 }
@@ -336,7 +339,33 @@ text-align: center;
   font-size: 0.7rem;
   color: #000000;
 }
+/* scroll to top button */
+.arrow__up {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 
+#scrollTop {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+ 
+  right: 2rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: orange;
+  color: #000000;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+}
+
+#scrollTop:hover {
+  background-color: #555555;
+  color: orange;
+}
 /* POPUP */
 .popup__wrapper {
   position: fixed;
