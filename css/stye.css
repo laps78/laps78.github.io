@@ -150,20 +150,17 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  border: 1px solid grey;
 }
 .portfolio_item_wrapper {
   display: flex;
-  border: 1px solid salmon;
 }
 .portfolio_column_left {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 60%;
-  margin: 3px;
+  width: 50%;
+  margin: 0.25rem;
   padding: 0.5rem;
-  border: 1px solid red;
 }
 .project_description_title {
   margin: 0.25rem 0;
@@ -176,7 +173,7 @@ body {
   padding: 0.25rem;
   margin-bottom: 0.25rem;
   background-color: #ffd967e3;
-  border: 0.25rem solid #f6ca46ed;
+  border: 0.1rem solid #f6ca46ed;
   border-radius: 0.25rem;
 }
 .skill__badge:nth-child(n+1) {
@@ -187,13 +184,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40%;
-  margin: 3px;
+  width: 50%;
+  margin: 0.25rem;
   padding: 0.5rem;
-  border: 1px solid green;
 }
 .portfolio_project_screenshot {
-  width: 90%;
+  width: 100%;
+}
+.portfolio_project_link {
+  margin-top: 0.25rem;
 }
 
 /* SERTIFICATIONS SPECIFIC STYLES */
@@ -397,8 +396,20 @@ text-align: center;
   height: 1px;
   clip: rect(1px, 1px, 1px, 1px);
 }
-
-@media (min-width: 641px) and (max-width: 1199px) {
+/* Tablet: portrait */
+@media (min-width: 641px) and (max-width: 1100px) {
+  /* PORTFOLIO SPECIFIC STYLES */
+  .portfolio_item_wrapper {
+    flex-direction: column;
+  }
+  .portfolio_column_left {
+    width: calc(100% - 1.5rem);
+    order: 1;
+  }
+  .portfolio_column_right {
+    width: calc(100% - 1.5rem);
+    order: 0;
+  }
   .popup {
     width: 100%;   
   }
@@ -406,7 +417,8 @@ text-align: center;
     width: calc(50% - 1rem);
   }  
 }
-@media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape){
+/* Tablet: landscape */
+@media (min-width: 641px) and (max-width: 1100px) and (orientation: landscape){
   .popup {
     width: 100%;   
   }
@@ -414,7 +426,22 @@ text-align: center;
     width: calc(25% - 1rem);
   }  
 }
-@media (max-width: 640px) {  
+/* Mobile */
+@media (max-width: 640px) {
+  /*------------------------*/
+  /* PORTFOLIO SPECIFIC STYLES */
+  .portfolio_item_wrapper {
+    flex-direction: column;
+  }
+  .portfolio_column_left {
+    width: calc(100% - 1.5rem);
+    order: 1;
+  }
+  .portfolio_column_right {
+    width: calc(100% - 1.5rem);
+    order: 0;
+  }
+  /*------------------------*/
   .sertificate__preview {
     width: 100%;
   }
