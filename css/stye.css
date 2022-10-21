@@ -7,6 +7,10 @@ body {
   flex-direction: column;
   scroll-behavior: smooth;
 }
+p {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
 
 .header__wrapper {
   width: 100%;
