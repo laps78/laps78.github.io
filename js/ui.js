@@ -1,10 +1,12 @@
 document.addEventListener('DOMContentLoaded', onloadEventhandler);
 
+//init ui
 function onloadEventhandler() {
   activateSertificateLinks();
   window.addEventListener('scroll', scrollTopButtonHideOrShow);
 };
 
+// sertificate popup link activation
 function activateSertificateLinks() {
   const sertificateLinks = document.querySelectorAll('.sertificate__preview');
   sertificateLinks.forEach(sertificateLink =>
@@ -16,9 +18,10 @@ function activateSertificateLinks() {
   }))
 };
 
+// scroll to top button
 function scrollTopButtonHideOrShow() {
   const scrollTopButton = document.getElementById('scrollTop');
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     scrollTopButton.style.display = 'block';
     scrollTopButton.addEventListener('click', scrollToTop);
   } else {
