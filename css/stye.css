@@ -264,7 +264,14 @@ p {
 }
 
 .footer_right_column {
-  width: 70%;
+  width: 30%;
+  padding: 0.125rem 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.footer_statistics_column {
+  width: 30%;
   padding: 0.125rem 1rem;
   margin: 1rem;
   display: flex;

@@ -11,6 +11,17 @@
 </head>
 
 <body>
+  <!--LiveInternet counter-->
+  <script>
+  new Image().src = "https://counter.yadro.ru/hit?r"+
+  escape(document.referrer)+((typeof(screen)=="undefined")?"":
+  ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+  screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+  ";h"+escape(document.title.substring(0,150))+
+  ";"+Math.random();
+  </script>
+  <!--/LiveInternet-->
+  
   <!-- HEADER -->
   <header id="home" class="header">
     <div class="header__wrapper">
@@ -400,6 +411,22 @@
 
         </ul>
       </div>
+    </div>
+    <div class="footer_statistics_column">
+      <h3 class="footer__caption">
+        Page statistics
+      </h3>
+      <!--LiveInternet logo-->
+      <a href="https://www.liveinternet.ru/click" target="_blank">
+        <img src="https://counter.yadro.ru/logo?41.6"
+             title="LiveInternet"
+             alt=""
+             style="border:0" 
+             width="31"
+             height="31"
+        />
+      </a>
+      <!--/LiveInternet-->
     </div>
     
   </footer>
