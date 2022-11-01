@@ -270,13 +270,7 @@ p {
   display: flex;
   flex-direction: column;
 }
-.footer_statistics_column {
-  width: 30%;
-  padding: 0.125rem 1rem;
-  margin: 1rem;
-  display: flex;
-  flex-direction: column;
-}
+
 
 .footer__span {
   color: rgb(213, 212, 212);
@@ -334,6 +328,13 @@ p {
   background-image: url("../svg/Viber_white.svg");
 }
 
+.footer_statistics_column {
+  width: 30%;
+  padding: 0.125rem 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
 
 /* Copyrights */
 .copy__wrapper {
@@ -436,6 +437,7 @@ text-align: center;
   height: 1px;
   clip: rect(1px, 1px, 1px, 1px);
 }
+
 /* Tablet: portrait */
 @media (min-width: 641px) and (max-width: 1100px) {
   .popup {
@@ -445,6 +447,7 @@ text-align: center;
     width: calc(50% - 1rem);
   }  
 }
+
 /* Tablet: landscape */
 @media (min-width: 641px) and (max-width: 1100px) and (orientation: landscape){
   .popup {
@@ -454,6 +457,7 @@ text-align: center;
     width: calc(25% - 1rem);
   }  
 }
+
 /* Mobile */
 @media (max-width: 640px) {
   /* PORTFOLIO SPECIFIC STYLES */
@@ -490,6 +494,10 @@ text-align: center;
   }
   
   .footer_right_column {
+    width: 100%;
+  }
+
+  .footer_statistics_column {
     width: 100%;
   }
 
